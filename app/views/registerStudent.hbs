@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<!--
+     Name:         		Brandon Cressley
+     Project Phase 1: 	Class Attendance System
+	 Purpose:	   		Create an application to record attendance of a class.
+     URL:          		http://unixweb.kutztown.edu/~bcres539/index.php
+     Course:       		CSC 242 - Fall 2015
+     Due Date:     		March 28, 2016
+-->
+
+<html>
+   <head>
+      <title>            </title>
+	  <link rel="stylesheet" type="text/css" href="../style.css">
+	  <script type="text/javascript">
+	  <!--
+	   function student()
+	  {
+	  var fname = document.getElementById('fname').value;
+	  var lname = document.getElementById('lname').value;
+	  var email = document.getElementById('email').value;
+	  var pword = document.getElementById('pword').value;
+	  var classes= document.getElementById('classes').value;
+		if(fname==""||lname==""||email==""||pword=="")
+		{
+		window.alert("Please fill in all requirements.");
+		return false;
+		}
+		else
+		{
+		window.alert("All data entered.");
+		return true;
+		}
+	  }*/
+	   //-->
+	  </script>
+	  <meta charset="utf-8">
+   </head>
+	<body>
+	<div align="right"><a href="../">Main Menu</a></div>
+	<h1>Register for a Student Account</h1>
+			<form id="signupstu" name="signupstu" method="post" action="/signupstu">
+			<p> <label for="username">Name:<br /></label>
+			<input type="text" name="username" id="username" size="40" value=""/>
+			</p>
+			<br />
+			<p> <label for="email">E-mail Address:<br /></label>
+			<input type="text" name="email" id="email" size="40" value=""/>
+			</p>
+			<br />
+			<p> <label for="password">Password:<br /></label>
+			<input type="password" name="password" id="password" size="40" value=""/>
+			</p>
+			<p> <label for="passwordConfirm">Confirm Password:<br /></label>
+			<input type="password" name="passwordConfirm" id="passwordConfirm" size="40" value=""/>
+			</p>
+			
+			<p>
+			<input type="submit" value="Submit"/>
+			<input type="reset" value="Clear"/>
+			</p>
+		</form>
+		<script>
+			function student(){
+				alert("Function not currently avaliable")
+			}
+		</script>
+	</body>
+</html>
+
+

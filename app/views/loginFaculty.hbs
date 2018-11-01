@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<!--
+     Name:         		Brandon Cressley
+     Project Phase 1: 	Class Attendance System
+	 Purpose:	   		Create an application to record attendance of a class.
+     URL:          		http://unixweb.kutztown.edu/~bcres539/index.php
+     Course:       		CSC 242 - Fall 2015
+     Due Date:     		March 28, 2016
+-->
+
+<html>
+   <head>
+      <title>            </title>
+	  <link rel="stylesheet" type="text/css" href="../style.css">
+	
+	  <meta charset="utf-8">
+   </head>
+	<body>
+ <div align="right"><a href="../">Home</a></div>
+	<h1>Enter your Faculty Login Information:</h1>
+		<form id="signinfac" name="signinfac" method="post" action="signinfac">
+			<p> <label>E-mail Address:<br /></label>
+			<input type="text" id="emailLogin" name="emailLogin" size="40" value=""/>
+			</p>
+			<br />
+			<p> <label>Password:<br /></label>
+			<input type="password" id="pwordLogin" name="pwordLogin" size="40" value=""/>
+			</p>
+			<br />
+			<p>
+			<input type="submit" value="Submit" onclick="faculty()"/>
+			<input type="reset" value="Clear"/>
+			</p>
+		</form>
+		<script>
+			var stuData = <%-JSON.stringify(stuData)%>;
+			var obj = JSON.parse(stuData);
+			
+			function submitTest(){
+				var emailValue = document.getElementById("emailLogin").value;
+				var passValue = document.getElementById("pwordLogin").value;
+				for(i = 0; i < 4; i++){
+					if(obj[i].email == emailValue ){
+						if(obj[i].password == passValue ){
+							alert("User has logged in");
+							//alert(window.location.href);
+							//newpage();
+							//document.location.href = '../tempProfile';
+							//window.location.assign("../tempProfile");
+						}	
+					}
+				}
+				//alert(emailValue);
+				//alert(stuData);
+			}
+			
+			function newpage(){
+				window.location.href("http://faculty.kutztown.edu/tan/rwd/330.html");
+			}
+			
+		</script>
+	</body>
+</html>
+
+

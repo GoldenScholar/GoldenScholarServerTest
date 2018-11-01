@@ -1,0 +1,30 @@
+{
+ 
+    "dev": {
+ 
+        "username": "goldenscholar",
+ 
+        "password": "goldenscholar",
+ 
+        "database": "hiThisIsJames",
+ 
+        "host": "goldenscholardb.celxaip0boss.us-east-2.rds.amazonaws.com",
+ 
+        "dialect": "mysql"
+ 
+    },
+ 
+    "prod": {
+ 
+        "username": "goldenscholar",
+ 
+        "password": "goldenscholar",
+ 
+        "database": "goldenscholardb",
+ 
+        "host": "goldenscholardb.celxaip0boss.us-east-2.rds.amazonaws.com",
+ 
+        "dialect": "mysql"
+ 
+    }
+}

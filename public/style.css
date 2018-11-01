@@ -1,0 +1,15 @@
+/*Brandon Cressley*/
+p, h1 {color: white; font-family:tahoma,helvettica,sans-serif; font-size: 12pt; text-align: center; }
+h2 {color: white; font-family:tahoma,helvettica,sans-serif; font-size: 10pt; text-align: center; }
+	a {color: blue}
+body {background: url(ku_background.jpg) gray no-repeat center center fixed;
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	 background-size:cover;}
+
+.forms{text-align: center}
+.none {color: red}
+.beginner {color: blue}
+.intermediate {color: green}
+.expert {color: black}
