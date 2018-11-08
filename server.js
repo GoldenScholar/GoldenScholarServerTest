@@ -5,6 +5,8 @@ var session    = require('express-session');
 var bodyParser = require('body-parser');
 var env = require('dotenv').load();
 var exphbs = require('express-handlebars');
+var server_port = process.env.OPENSHIFT_NODEJS_PORT
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP
 
 //For BodyParser
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -53,10 +55,10 @@ app.get('/', function(req, res){
   });
 });
 
-app.listen(3000, function(err) {
+app.listen(server_port, server_ip_address, function(err) {
  
     if (!err)
-        console.log("Site is live");
+        console.log( "Listening on " + server_ip_address + ", port " + server_port );
     else console.log(err)
  
 });
